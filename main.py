@@ -18,6 +18,7 @@ def is_valid(event):
     return True
 
 def get_structured_event(event):
+    # Extract and transform fields
     user_id = event.get("user_id")
     timestamp = event["timestamp"]
     event_date = pd.to_datetime(event["timestamp"]).date()
@@ -48,6 +49,7 @@ def main():
     valid_events = []
     skipped_events = []
 
+    # Validate and transform each event
     for event in raw_events:
         if is_valid(event):
             try:
@@ -62,6 +64,7 @@ def main():
     df = pd.DataFrame(valid_events)
     df.to_csv(output_file, index=False)
 
+    # log any skipped events
     with open(log_file, "w") as log:
         for line in skipped_events:
             log.write(line + "\n")
