@@ -97,4 +97,4 @@ python -m unittest test_main.py
 ## Author
 
 **Teja Reddy Burri**  
-📧 Email: [tejasrikanthredyb@gmail.com](mailto:tejasrikanthredyb@gmail.com)
+📧 Email: [tejasrikanthreddyb@gmail.com](mailto:tejasrikanthreddyb@gmail.com)
