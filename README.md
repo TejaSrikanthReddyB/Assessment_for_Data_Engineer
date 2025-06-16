@@ -1,6 +1,6 @@
 # Event Data Pipeline Assessment
 
-This assessment implements a modular Python-based pipeline to convert raw JSON event logs into clean, structured CSV outputs. It is designed for readability and maintainability, enabling downstream analytics to use the data directly.
+This assessment implements a modular Python-based pipeline to convert raw JSON event logs into clean, structured CSV outputs. It is designed to enable downstream analytics to use the data directly.
 
 ---
 
