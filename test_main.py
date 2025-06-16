@@ -32,8 +32,10 @@ class TestEventPipeline(unittest.TestCase):
             }
         }
 
+        # tranform the raw event
         result = get_structured_event(raw_event)
         print(result)
+        # verify all fields are correctly extracted
         self.assertEqual(result["user_id"], "xyz789")
         self.assertEqual(result["event_type"], "purchase")
         self.assertEqual(result["screen"], "checkout")
